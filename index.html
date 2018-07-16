@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Welcome</title>
+        <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+        <meta charset = 'UTF-8'/>
+        <link rel = 'shortcut icon' href = 'Images/Neutron.ico'>
+        <link rel = 'stylesheet' type = 'text/Css' href = 'ResumeCSS.css'>
+    </head>
+
+    <body>
+        <!-- Vertical Scroll -->
+        <div id = 'VerticalScroll'>
+            <div class = 'ScrollIcon' id = 'First'></div>
+            <div class = 'ScrollIcon'></div>
+            <div class = 'ScrollIcon'></div>
+            <div class = 'ScrollIcon'></div>
+            <div class = 'ScrollIcon'></div>
+            <div class = 'ScrollIcon'></div>
+            <div class = 'ScrollIcon'></div>
+        </div>
+        <!-- Sections -->
+        <!-- S1 - Introduction -->
+        <section class ='Section'>
+            <img ondragstart = 'return false' class = 'SectionBG' id = 'I1' src = 'Images/Intro.jpg'>
+            <div id = 'LarryWu'>Larry Wu</div>
+            <button class = 'S1Buttons' id = 'EducationButton'>Education</button>
+            <button class = 'S1Buttons' id = 'SkillsButton'>Programming Skills</button>
+            <button class = 'S1Buttons' id = 'RhythmTrackButton'>Rhythm Track</button>
+            <button class = 'S1Buttons' id = 'ImageCollectorButton'>Image Collector</button>
+            <button class = 'S1Buttons' id = 'TurnipEsportsButton'>Turnip Esports</button>
+        </section>
+        <!-- S2 - Education -->
+        <section class ='Section'>
+            <div class = 'S2Elem' id = 'S2Text1'>University of Toronto</div>
+            <div class = 'S2Elem' id = 'S2Text2'>Rotman School of Management</div>
+            <div class = 'S2Elem' id = 'S2Text3'>Bachelor's of Commerce</div>
+            <img ondragstart = 'return false' class = 'SectionBG' id = 'I2' src = 'Images/Rotman.jpg'>
+        </section>
+        <!-- S3 - Skills -->
+        <section class ='Section'>
+            <img ondragstart = 'return false' class = 'SectionBG' src = 'Images/Space.jpg'>
+            <div class = 'S3Elem' id = 'S3Text1'>Programming Skills</div>
+            <div id = 'SkillBar'>
+                <img ondragstart = 'return false' class = 'SkillBarImage' src = 'Images/Html.jpg'>
+                <img ondragstart = 'return false' class = 'SkillBarImage' src = 'Images/Css.jpg'>
+                <img ondragstart = 'return false' class = 'SkillBarImage' src = 'Images/Javascript.jpg'>
+                <img ondragstart = 'return false' class = 'SkillBarImage' src = 'Images/git.jpg'>
+                <img ondragstart = 'return false' class = 'SkillBarImage' src = 'Images/CCpp.jpg'>
+            </div>
+        </section>
+        <!-- S4 - Rhythm Track -->
+        <section class ='Section'>
+            <div class = 'SectionTitle' id = 'S4Title'>Open Source Project</div>
+            <div class = 'S4Elem' id = 'S4Text1'> Rhythm Track </div>
+            <div class = 'S4Elem' id = 'S4Text2'> Built on Unreal Engine 4</div>
+            <button class = 'S4Elem' id = 'GithubRhythmTrack' onclick = 'window.open("https://github.com/13Legend31/RhythmTrack")'> Github </button>
+            <img ondragstart = 'return false' class = 'SectionBG' id = 'I4' src = 'Images/RhythmTrack.jpg'>
+        </section>
+        <!-- S5 - Pictures Collection -->
+        <section class ='Section'>
+            <div class = 'SectionTitle' id = 'S5Title'>Open Source Project</div>
+            <div class = 'S5Elem' id = 'S5Text1'>Image Collector</div>
+            <div class = 'S5Elem' id = 'S5Text2'>Make Albums Easily</div>
+            <button class = 'S5Elem' id = 'GithubPicturesCollection' onclick = 'window.open("https://github.com/13Legend31/Pictures-Website")'> Github </button>
+            <img ondragstart = 'return false' class = 'SectionBG' id = 'I5' src = 'Images/PicturesCollector.jpg'>
+        </section>
+        <!-- S6 - Turnip Esports-->
+        <section class ='Section'>
+            <div class = 'SectionTitle' id = 'S6Title'>Startup Experience</div>
+            <div class = 'S6Elem' id = 'S6Text1'>Turnip Esports</div>
+            <div class = 'S6Elem' id = 'S6Text2'>Director of Operations</div> 
+            <div class = 'S6Elem' id = 'S6Text3'>Sponsored by HiRez Studios</div>
+            <img ondragstart = 'return false' class = 'SectionBG' id = 'I6' src = 'Images/TurnipEsports.jpg'>
+        </section>
+        <!-- S7 - End Section -->
+        <section class ='Section'>
+            <div class = 'S7Elem' id = 'S7Text1'>Thank you for visiting my website!</div>
+            <div class = 'S7Elem' id = 'S7Text2'>Feel free to send me a message at anytime!</div>
+            <div class = 'S7Elem' id = 'S7Text3'>Email: larrywu1996@gmail.com</div>
+            <div class = 'S7Elem' id = 'S7Text4'>Phone Number: 647-896-3078</div>
+            <div class = 'S7Elem' id = 'S7Wrapper'>
+                <button id = 'Github' onclick = 'window.open("https://github.com/13Legend31")'>Github</button>
+                <button id = 'LinkedIn' onclick = 'window.open("https://www.linkedin.com/in/larry-wu-698621167/")'>LinkedIn</button>
+            </div>
+            <img ondragstart = 'return false' class = 'SectionBG' id = 'I7' src = 'Images/ContactInfo.jpg'>
+        </section>
+    </body>
+    <script src = 'Script.js'></script>
+</html>

@@ -1,0 +1,318 @@
+* {
+    margin:0; padding:0; border:none;
+}
+html, body {
+    overflow:hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select:none;
+}
+div, img {
+    -webkit-user-select: none;
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    user-select: none; 
+}
+button {
+    cursor:pointer;
+}
+/*-------------- Scroll ---------------*/
+#VerticalScroll {
+    position:absolute;
+    right:4vw; top: 30vh;
+    opacity:0;
+    transition:0.7s;
+}
+.ScrollIcon {
+    position:relative;
+    margin: 4vh 0 0 0; border:2px solid black;
+    display:block;
+    width:0.5vw; height: 1vh;
+    border-radius:50%;
+    background-color:orange;
+    opacity :0.4;
+    transition: background-color 0.4s, opacity 0.4s;
+}
+#First {
+    background-color:red;
+    opacity:1;
+}
+/* ----------------- Sections -----------------------*/
+.Section {
+    position: absolute;
+    left:0;
+    width:100%; height:100%;
+    z-index:-1;
+    overflow:hidden;
+}
+.SectionTitle {
+    position:absolute;
+    left:0.5vw; top:1vh;
+    display:inline;
+    opacity:1;
+    font-family:sans-serif; font-weight:500;
+    font-size:1vw;
+    transition:0.4s;
+}
+.SectionBG {
+    position:absolute;
+    left:0; top:0;
+    width:100%; min-width:178vh; min-height: 100vh;
+    z-index:-1;
+    user-select:none;
+    -webkit-user-drag: none;
+}
+/*-------- S1 - Introduction --------*/
+#LarryWu {
+    position:absolute;
+    text-align:center;
+    top:30vh;
+    width:100%;
+    color:white; 
+    font-family:sans-serif; font-weight:700;
+    font-size:calc(3.5vw);
+    text-shadow:3px 3px 3px black, -3px -3px 3px black;
+    text-align:center;
+    opacity:0;
+    transition:0.7s;
+}
+.S1Buttons {
+    position:absolute;
+    box-shadow: 2px 2px 2px black, -2px -2px 2px black;
+    outline:none;
+    width:8vw;
+    font-size: 1vw; font-family:sans-serif; font-weight:600;
+    top:65vh;
+    opacity:0;
+    transition:opacity 0.4s, 0.7s;
+}
+.S1Buttons:hover {
+    opacity:1;
+}
+#EducationButton {
+    background-color:white;
+    left:20vw;
+}
+#SkillsButton {
+    background-color:orangered;
+    left:33vw;
+}
+#RhythmTrackButton {
+    background-color:red;
+    left:46vw;
+}
+#ImageCollectorButton {
+    background-color:chartreuse;
+    left:59vw;
+}
+#TurnipEsportsButton {
+    background-color:gold;
+    left:72vw;
+}
+/*-------- S2 - Education --------*/
+.S2Elem {
+    position:absolute;
+    left:3vw;
+    color:white;
+    font-family:sans-serif;
+    opacity:0;
+    transition:0.4s;
+}
+#S2Text1 {
+    top:10vh;
+    font-size:3vw; font-weight:700;    
+}
+#S2Text2 {
+    top:calc(3.5vw + 10vh);
+    font-size:1.5vw;
+}
+#S2Text3 {
+    top:calc(5.2vw + 10vh);
+    font-size:1vw;
+}
+/*-------- S3 - Skills --------*/
+#SkillBar {
+    position:absolute;
+    left:12.5vw; top:37.5vh;
+    width:75vw; height:25vh;
+    transition:box-shadow 0.3s;
+}
+#SkillBar img {
+    position:absolute;
+    width:20%; height: 100%;
+}
+.S3Elem {
+    position:absolute;
+    min-width:600px;
+    left:3vw;
+    color:orangered;
+    font-family:sans-serif;
+    opacity:0;
+    transition:0.4s;
+}
+#S3Text1 {
+    top:10vh; 
+    font-size:3vw; font-weight:700;       
+}
+/*-------- S4 - RhythmTrack --------*/
+.S4Elem {
+    position:absolute;
+    left:3vw;
+    color:red;
+    font-family:sans-serif;
+    opacity:0;
+    transition:0.4s;
+}
+#I4 {
+    filter:brightness(0.9);
+}
+#S4Title {
+    color:red;
+    filter:brightness(0.9);
+}
+#S4Text1 {
+    top:10vh; 
+    font-size: 3vw; font-weight:700;               
+}
+#S4Text2 {
+    top:calc(3.5vw + 10vh);
+    font-size:1.5vw;
+}
+#GithubRhythmTrack {
+    outline:none;
+    display:inline;
+    min-width:100px; min-height:20px;
+    top:calc(70px + 3vw + 10vh);
+    background-color:lime;
+    border-radius:30%; border: 2px solid purple;
+    color: black;
+    font-size: calc(24px + 0.5vw); font-weight:700;
+}
+#GithubRhythmTrack:hover {
+    background-color:purple;
+}
+/*-------- S5 - Pictures Collector --------*/
+.S5Elem {
+    position:absolute;
+    min-width:600px;
+    left:3vw;
+    color:chartreuse;
+    font-family:sans-serif;
+    opacity:0;
+    transition:0.4s;
+}
+#I5 {
+    filter:brightness(0.7);
+}
+#S5Title {
+    color:chartreuse;
+    filter:brightness(0.7);
+}
+#S5Text1 {
+    top:7vh; 
+    font-size:3vw; font-weight:700;  
+}
+#S5Text2 {
+    top:calc(3.5vw + 7vh);
+    font-size:1.5vw;
+}
+#GithubPicturesCollection {
+    outline:none;
+    display:inline;
+    min-width:100px; min-height:20px;
+    top:calc(70px + 3vw + 7vh);
+    background-color:lime;
+    border-radius:30%; border: 2px solid purple;
+    color: black;
+    font-size: calc(24px + 0.5vw); font-weight:700;
+}
+#GithubPicturesCollection:hover {
+    background-color:purple;
+}
+/*-------- S6 - Turnip Esports --------*/
+.S6Elem {
+    position:absolute;
+    min-width:600px;
+    left:3vw;
+    color:gold;
+    font-family:sans-serif;
+    opacity:0;
+    transition:0.4s;
+}
+#I6 {
+    filter:brightness(0.5);
+}
+#S6Title {
+    color:gold;
+    filter:brightness(0.8);
+}
+#S6Text1 {
+    top:10vh;
+    font-size:3vw; font-weight:700;    
+}
+#S6Text2 {
+    top:calc(3.5vw + 10vh);
+    font-size:1.5vw;
+}
+#S6Text3 {
+    top:calc(5.2vw + 10vh);
+    font-size:1vw;
+}
+/*-------- S7 - Contact Information --------*/
+.S7Elem {
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-family:sans-serif;
+    opacity:0;
+    transition:0.8s;    
+}
+#S7Text1 {
+    top:25vh;
+    font-size:3.5vw; font-weight:700;  
+}
+#S7Text2 {
+    top:calc(3.5vw + 30vh);
+    font-size:1.5vw;
+}
+#S7Text3 {
+    top:calc(5.2vw + 35vh);
+    font-size:1vw;
+}
+#S7Text4 {
+    top:calc(5.7vw + 37vh);
+    font-size:1vw;
+}
+#S7Wrapper {
+    position:absolute;
+    left:0;
+    width:100%; height:10vh;
+    top:70vh;
+}
+#S7Wrapper button {
+    position:absolute;
+    border-radius:30%; border: 2px solid purple;
+    width:10vw; height:100%;
+    background-color:lime;
+    font-size: 1.5vw; font-weight:700;
+    outline:none;
+}
+#Github {
+    width:10vw; height:100%;
+    left:20vw;
+}
+#Github:hover {
+    background-color:purple;
+}
+#LinkedIn {
+    position:absolute;
+    border-radius:30%; border: 2px solid purple;
+    width:10vw; height:100%;
+    left:70vw;
+}
+#LinkedIn:hover {
+    background-color:purple;
+}
+/*-------------------------*/
