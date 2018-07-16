@@ -5,11 +5,11 @@
     var verticalScroll = []; 
     var sections = [];
     //------- Load In Variables -------
-    var scrollHide = document.getElementsByClassName('ScrollIcon');
+    var scrollIcon = document.getElementsByClassName('ScrollIcon');
     var Section = document.getElementsByClassName('Section');
     var Top = 0;
     for (var c = 0; c < numberOfSections; c++, Top += 100) {
-        verticalScroll.push(scrollHide[c].style);
+        verticalScroll.push(scrollIcon[c].style);
         sections.push(Section[c].style);
         sections[c].top = Top + 'vh';
     }
