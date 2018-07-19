@@ -1,12 +1,12 @@
 'use strict';
 (function() {
     // Section related variables
-    var numberOfSections = 7;
     var verticalScroll = []; 
     var sections = [];
     //------- Load In Variables -------
     var scrollIcon = document.getElementsByClassName('ScrollIcon');
     var Section = document.getElementsByClassName('Section');
+    var numberOfSections = Section.length;
     var Top = 0;
     for (var c = 0; c < numberOfSections; c++, Top += 100) {
         verticalScroll.push(scrollIcon[c].style);
